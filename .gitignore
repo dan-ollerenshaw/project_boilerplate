@@ -7,6 +7,7 @@ graphs/
 logs/
 resources/dummy_data/
 dist/
+results/
 
 # tox and common virtualenv directory
 .tox/
@@ -17,5 +18,5 @@ dist/
 .vscode/
 /*.code-workspace
 
-# could include docs, but seems tidier not to, especially if we have a tox env to generate everything
-/docs
+# pytest
+.pytest_cache

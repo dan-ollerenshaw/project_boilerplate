@@ -6,6 +6,7 @@ import logging
 import pandas as pd
 
 from src.analysis import analyse, make_boxplot, save_results
+from src.config import create_output_folders
 from src.logger import setup_logging
 from src.generate_dummy_data import generate_dummy_data
 
@@ -50,5 +51,6 @@ def _parse_args():
 if __name__ == '__main__':
     # for now this only works with path hacking. so we need tox
     ARGS = _parse_args()
+    create_output_folders()
     setup_logging()
     main(input_filepath=ARGS.input_filepath)
