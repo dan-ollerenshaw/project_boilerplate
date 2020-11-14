@@ -1,0 +1,21 @@
+# compiled python stuff
+*.py[cod]
+__pycache__
+
+# outputs
+graphs/
+logs/
+resources/dummy_data/
+dist/
+
+# tox and common virtualenv directory
+.tox/
+.venv/
+
+# IDE config
+.idea/
+.vscode/
+/*.code-workspace
+
+# could include docs, but seems tidier not to, especially if we have a tox env to generate everything
+/docs
